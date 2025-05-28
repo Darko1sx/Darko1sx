@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>BRF Esport</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #FFD700;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            max-width: 200px;
+            margin-top: 20px;
+        }
+        h1 {
+            margin-top: 10px;
+        }
+        .button {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 15px 30px;
+            background-color: #FFD700;
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .content-section {
+            display: none;
+            margin-top: 30px;
+            text-align: right;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="BRF Logo">
+        <h1>BRF Esport</h1>
+    </header>
+
+    <button class="button" onclick="showSection('about')">من نحن؟</button>
+    <button class="button" onclick="showSection('rules')">قوانين الكلان</button>
+    <button class="button" onclick="showSection('links')">مواقعنا</button>
+
+    <div id="about" class="content-section">
+        <h2>من نحن؟</h2>
+        <p>
+        نَحنُ كلان عراقي نشاء 2025/6/28<br>
+        يُمثل كل لاعب وستريمر ويوتيوبر عراقي ويحتاج الدَعم من ناحيه افكار، تصميم، شراكات والخ…<br>
+        تقدر تشوف كل شي يخصنه عن طريق الذهاب لـ الزر <strong>مواقعنا</strong>.
+        </p>
+    </div>
+
+    <div id="rules" class="content-section">
+        <h2>قوانين الكلان</h2>
+        <h3>قوانين عامه:</h3>
+        <ul>
+            <li>1. احترام الاعضاء والاداره</li>
+            <li>2. اذا كمت من قسم المشاهير فـ يُلزم عليك توقيع عقد الكتروني</li>
+            <li>3. عدم نشر الاشياء الغير اخلاقيه والحصريات بداخل السيرفر</li>
+            <li>4. اذا كنت داخل التيم يَجب عليك ان تكون ليس بتيم اخر</li>
+            <li>5. الالتزام بالسلوك الحسن (لانك تمثل بلدنا)</li>
+        </ul>
+        <h3>قوانين ديسكورد:</h3>
+        <ul>
+            <li>1. عدم نشر الريائل من الرومات الخاصه</li>
+            <li>2. عدم نشر السياسه والدين</li>
+            <li>3. عدم افتعال الاسبام بجميع انواعه</li>
+            <li>4. يُمنع السب والشتم (بحال المزاح بالخاص)</li>
+            <li>5. عدم النشر او التلميح للاحائات</li>
+            <li>6. حضور جميع الاجتماعات</li>
+        </ul>
+    </div>
+
+    <div id="links" class="content-section">
+        <h2>مواقعنا</h2>
+        <p><a href="https://discord.gg/aPUMNAeCt3" target="_blank">سيرفر الديسكورد</a></p>
+        <p><a href="https://www.instagram.com/brf.espoet?igsh=d3M3Z2x3eGZvMWZt&utm_source=qr" target="_blank">حساب الانستا</a></p>
+        <p><a href="https://www.tiktok.com/@brf.esport?_t=ZS-8wjqVIyuv6m&_r=1" target="_blank">حساب التيكتوك</a></p>
+        <p><a href="https://www.instagram.com/iq1.hoodie?igsh=MWxqZ21zZTBjYXh3MA%3D%3D&utm_source=qr" target="_blank">متجر السيرفر (عراق هودي)</a></p>
+    </div>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.content-section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
